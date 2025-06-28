@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Al-Kauthar Kindergarten</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="images/LOGO-AL-KAUTHAR-EDUQIDS.png" alt="ALKAUTHAR EDUQIDS Logo" />
+    </div>
+  </header>
+
+  <!-- Banner Section -->
+  <section class="banner">
+    <img src="images/kindergarten3.jpg" alt="Kindergarten Banner" />
+  </section>
+
+<!-- ABOUT SECTION -->
+<section class="about reveal">
+  <div class="about-container image-left">
+    <div class="about-image">
+      <img src="images/kindergarten-photo.jpg" alt="Al-Kauthar Kindergarten" />
+    </div>
+    <div class="about-text">
+      <h2>About Al-Kauthar Kindergarten</h2>
+      <p>
+       Al Kauthar Eduqids is a kindergarten established in September 2013 which offers preschool for 4-6 year old students with Pre Tahfiz (Quranic memorization) program, Montessori service program, and also Islamic Advancement program (KAFA).  This has made Al Kauthar Eduqids unique and special since not many other kindergarten offer such program to these ‘special needs children’. 
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- CALL TO ACTION SECTION -->
+<section class="join reveal">
+  <div class="join-container">
+    <div class="join-image">
+      <img src="images/parent.png" alt="Happy Kids" />
+    </div>
+    
+    <div class="join-text">
+      <h2>Interested in joining us?</h2>
+      <p>Be part of our growing family of educators and loving parents.</p>
+      <div class="buttons">
+  <a href="createParent.html" class="btn">Create Parent Account</a>
+  <a href="CreateAccTController" class="btn">Create Teacher Account</a>
+</div>
+    </div>
+
+    <div class="join-image">
+      <img src="images/teacher.png" alt="Learning Together" />
+    </div>
+  </div>
+</section>
+
+
+<!-- GALLERY SECTION -->
+<section class="gallery reveal">
+  <h2>Gallery</h2>
+  <div class="gallery-scroll">
+    <img src="images/kindergarten3.jpg" alt="Activity 1" />
+    <img src="images/kindergarten3.jpg" alt="Activity 2" />
+    <img src="images/kindergarten3.jpg" alt="Activity 3" />
+    <img src="images/kindergarten3.jpg" alt="Activity 4" />
+    <img src="images/kindergarten3.jpg" alt="Activity 5" />
+  </div>
+</section>
+
+
+  <script>
+  window.addEventListener("load", () => {
+    const reveals = document.querySelectorAll(".reveal");
+    reveals.forEach((el, i) => {
+      setTimeout(() => {
+        el.classList.add("active");
+      }, i * 500); // delay each section
+    });
+  });
+
+  function toggleSidebar() {
+    alert("Sidebar toggled (placeholder)");
+  }
+</script>
+
+</body>
+</html>
